@@ -147,7 +147,7 @@ def find_employee():
         if str(employee['id']).lower() == find_input.lower() or find_input.lower() in str(employee['full_name']).lower():
 
             
-            body = f"{employee['id']:<20} | {employee['full_name']:<20} | {employee['salary']:<20} | {employee['working_day']:<25} | {employee['allowance']:<20} | {employee['total_salary']:<20} | {employee['income_classification']:<20} |"
+            body = f"{employee['id']:<20} | {employee['full_name']:<20} | {employee['salary']:<20} | {employee['working_day']:<25} | {employee['allowance']:<20} | {employee['total_salary']:<20} | {employee['income_classification']:<20} |\n"
             list_find_employee += body
     if list_find_employee:
         print("--- NHÂN VIÊN HỢP LỆ ---".center(len(list_find_employee)," "))
